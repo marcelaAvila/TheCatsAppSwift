@@ -64,15 +64,13 @@
 		E009F9B52A321F8600A2EFA8 /* TheCatsApp */ = {
 			isa = PBXGroup;
 			children = (
+				E009F9D92A32427900A2EFA8 /* Resources */,
+				E009F9D82A32426200A2EFA8 /* Controllers */,
+				E009F9D62A32423200A2EFA8 /* Views */,
+				E009F9D52A32421A00A2EFA8 /* Networking */,
 				E009F9D02A3224D500A2EFA8 /* Models */,
 				E009F9B62A321F8600A2EFA8 /* AppDelegate.swift */,
 				E009F9B82A321F8600A2EFA8 /* SceneDelegate.swift */,
-				E009F9D32A3225A500A2EFA8 /* CatAPIService.swift */,
-				E009F9BA2A321F8600A2EFA8 /* TheCatsViewController.swift */,
-				E009F9CE2A32235B00A2EFA8 /* DetailViewController.swift */,
-				E009F9CC2A3221FF00A2EFA8 /* DetailViewController.xib */,
-				E009F9BC2A321F8600A2EFA8 /* Main.storyboard */,
-				E009F9BF2A321F8700A2EFA8 /* Assets.xcassets */,
 				E009F9C12A321F8700A2EFA8 /* LaunchScreen.storyboard */,
 				E009F9C42A321F8700A2EFA8 /* Info.plist */,
 			);
@@ -85,6 +83,48 @@
 				E009F9D12A3224EA00A2EFA8 /* Cat.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E009F9D52A32421A00A2EFA8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E009F9D32A3225A500A2EFA8 /* CatAPIService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E009F9D62A32423200A2EFA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E009F9D72A32424C00A2EFA8 /* Cells */,
+				E009F9BC2A321F8600A2EFA8 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E009F9D72A32424C00A2EFA8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E009F9CC2A3221FF00A2EFA8 /* DetailViewController.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E009F9D82A32426200A2EFA8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E009F9BA2A321F8600A2EFA8 /* TheCatsViewController.swift */,
+				E009F9CE2A32235B00A2EFA8 /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E009F9D92A32427900A2EFA8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E009F9BF2A321F8700A2EFA8 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
