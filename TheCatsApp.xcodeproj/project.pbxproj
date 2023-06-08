@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		E009F9B72A321F8600A2EFA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009F9B62A321F8600A2EFA8 /* AppDelegate.swift */; };
 		E009F9B92A321F8600A2EFA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009F9B82A321F8600A2EFA8 /* SceneDelegate.swift */; };
-		E009F9BB2A321F8600A2EFA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009F9BA2A321F8600A2EFA8 /* ViewController.swift */; };
+		E009F9BB2A321F8600A2EFA8 /* TheCatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009F9BA2A321F8600A2EFA8 /* TheCatsViewController.swift */; };
 		E009F9BE2A321F8600A2EFA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E009F9BC2A321F8600A2EFA8 /* Main.storyboard */; };
 		E009F9C02A321F8700A2EFA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E009F9BF2A321F8700A2EFA8 /* Assets.xcassets */; };
 		E009F9C32A321F8700A2EFA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E009F9C12A321F8700A2EFA8 /* LaunchScreen.storyboard */; };
+		E009F9CD2A3221FF00A2EFA8 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E009F9CC2A3221FF00A2EFA8 /* DetailViewController.xib */; };
+		E009F9CF2A32235B00A2EFA8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009F9CE2A32235B00A2EFA8 /* DetailViewController.swift */; };
+		E009F9D22A3224EA00A2EFA8 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009F9D12A3224EA00A2EFA8 /* Cat.swift */; };
+		E009F9D42A3225A500A2EFA8 /* CatAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009F9D32A3225A500A2EFA8 /* CatAPIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E009F9B32A321F8600A2EFA8 /* TheCatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheCatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E009F9B62A321F8600A2EFA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E009F9B82A321F8600A2EFA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E009F9BA2A321F8600A2EFA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E009F9BA2A321F8600A2EFA8 /* TheCatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCatsViewController.swift; sourceTree = "<group>"; };
 		E009F9BD2A321F8600A2EFA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E009F9BF2A321F8700A2EFA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E009F9C22A321F8700A2EFA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E009F9C42A321F8700A2EFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E009F9CC2A3221FF00A2EFA8 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		E009F9CE2A32235B00A2EFA8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E009F9D12A3224EA00A2EFA8 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		E009F9D32A3225A500A2EFA8 /* CatAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,27 @@
 		E009F9B52A321F8600A2EFA8 /* TheCatsApp */ = {
 			isa = PBXGroup;
 			children = (
+				E009F9D02A3224D500A2EFA8 /* Models */,
 				E009F9B62A321F8600A2EFA8 /* AppDelegate.swift */,
 				E009F9B82A321F8600A2EFA8 /* SceneDelegate.swift */,
-				E009F9BA2A321F8600A2EFA8 /* ViewController.swift */,
+				E009F9D32A3225A500A2EFA8 /* CatAPIService.swift */,
+				E009F9BA2A321F8600A2EFA8 /* TheCatsViewController.swift */,
+				E009F9CE2A32235B00A2EFA8 /* DetailViewController.swift */,
+				E009F9CC2A3221FF00A2EFA8 /* DetailViewController.xib */,
 				E009F9BC2A321F8600A2EFA8 /* Main.storyboard */,
 				E009F9BF2A321F8700A2EFA8 /* Assets.xcassets */,
 				E009F9C12A321F8700A2EFA8 /* LaunchScreen.storyboard */,
 				E009F9C42A321F8700A2EFA8 /* Info.plist */,
 			);
 			path = TheCatsApp;
+			sourceTree = "<group>";
+		};
+		E009F9D02A3224D500A2EFA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E009F9D12A3224EA00A2EFA8 /* Cat.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +148,7 @@
 				E009F9C32A321F8700A2EFA8 /* LaunchScreen.storyboard in Resources */,
 				E009F9C02A321F8700A2EFA8 /* Assets.xcassets in Resources */,
 				E009F9BE2A321F8600A2EFA8 /* Main.storyboard in Resources */,
+				E009F9CD2A3221FF00A2EFA8 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E009F9BB2A321F8600A2EFA8 /* ViewController.swift in Sources */,
+				E009F9BB2A321F8600A2EFA8 /* TheCatsViewController.swift in Sources */,
+				E009F9D42A3225A500A2EFA8 /* CatAPIService.swift in Sources */,
+				E009F9CF2A32235B00A2EFA8 /* DetailViewController.swift in Sources */,
+				E009F9D22A3224EA00A2EFA8 /* Cat.swift in Sources */,
 				E009F9B72A321F8600A2EFA8 /* AppDelegate.swift in Sources */,
 				E009F9B92A321F8600A2EFA8 /* SceneDelegate.swift in Sources */,
 			);
