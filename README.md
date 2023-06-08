@@ -1,8 +1,4 @@
 
-# Project Title
-
-A brief description of what this project does and who it's for
-
 # The Cats App
 
 The Cats App es una aplicación móvil desarrollada en Swift que muestra un listado de diferentes razas de gatos junto con su información básica y fotos. Los datos se obtienen de la API de TheCatAPI.
