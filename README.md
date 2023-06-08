@@ -14,3 +14,5 @@ Proporciona una interfaz de usuario intuitiva y fácil de usar.
 Clona el repositorio de GitHub: git clone https://github.com/marcelaAvila/TheCatsAppSwift.git
 Abre el proyecto en Xcode.
 Compila y ejecuta la aplicación en el simulador o en un dispositivo iOS.
+
+Autor: Marcela Avila Beltran
