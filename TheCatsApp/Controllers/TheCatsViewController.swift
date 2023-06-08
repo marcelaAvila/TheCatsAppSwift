@@ -21,7 +21,7 @@ class TheCatsViewController: UIViewController {
         ListCatsTableView.register(UINib(nibName: "DetailViewController", bundle: nil), forCellReuseIdentifier: "DetailViewController")
         catAPIService.fetchBreeds { [weak self] list, error in
             if let error = error {
-                // Manejar el error, por ejemplo, mostrar una alerta o registrar el error
+                // Manejar el error en caso de que no se pueda hacer el consumo
                 print("Error fetching breeds:", error.localizedDescription)
                 return
             }
@@ -31,7 +31,7 @@ class TheCatsViewController: UIViewController {
                 // Asignar los datos obtenidos a la propiedad de datos del controlador
                 self?.listCat = list
                 
-                // Actualizar la tabla o cualquier otro elemento de la interfaz de usuario con los datos
+                // Actualizar la tabla con los datos obtenidos
                 self?.ListCatsTableView.reloadData()
             }
         }

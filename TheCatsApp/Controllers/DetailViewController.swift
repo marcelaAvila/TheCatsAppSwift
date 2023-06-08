@@ -34,7 +34,7 @@ class DetailViewController: UITableViewCell {
         catInfoView.layer.borderColor = UIColor.gray.cgColor
         catAPIService.fetchCatImage(withReferenceID: imageCatID ?? "") { imageURL, error in
             if let error = error {
-                // Manejar el error, por ejemplo, mostrar una alerta o registrar el error
+                // Manejar el error en caso de que no se pueda hacer el consumo
                 print("Error fetching cat image:", error.localizedDescription)
                 return
             }
@@ -46,13 +46,14 @@ class DetailViewController: UITableViewCell {
                         let image = UIImage(data: imageData)
                         
                         DispatchQueue.main.async {
-                            // Asignar la imagen a tu UIImageView o a cualquier otro elemento de la interfaz de usuario
+                            // Realizar asignacion en el UIImageView
                             self.imageCats.image = image
                         }
                     }
                 }
             } else {
                 // Manejar el caso en el que no se haya encontrado la URL de la imagen
+                print("No se encontro imagen")
             }
         }
         nameBreedLabel.text = "Nombre Raza: \(nameBread ?? "No aplica")"
